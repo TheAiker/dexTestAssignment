@@ -1,0 +1,21 @@
+.nav-barContainer {
+    height: 10vh;
+    width: auto;
+    border-radius: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px 0px #D1D1D180;
+    display: flex;
+    justify-content: space-between;
+  
+}
+.logoImage {
+    position: relative;
+    margin-left: 3vh;
+    margin-top: 2vh;
+}
+.accountIcon {
+    position: relative;
+    margin-top: 3vh;
+    margin-right: 3vh;
+    
+}
