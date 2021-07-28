@@ -1,5 +1,5 @@
-.nav-barContainer {
-    height: 10vh;
+.navBarContainer {
+    height: 5em;
     width: auto;
     border-radius: 0px;
     background: #FFFFFF;
@@ -9,13 +9,11 @@
   
 }
 .logoImage {
-    position: relative;
-    margin-left: 3vh;
-    margin-top: 2vh;
+    margin-left: 2em;
+    margin-top: 1em;
 }
-.accountIcon {
-    position: relative;
-    margin-top: 3vh;
-    margin-right: 3vh;
+.accountIcon {    
+    margin-top: 1.5em;
+    margin-right: 2em;
     
 }

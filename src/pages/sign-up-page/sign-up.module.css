@@ -1,0 +1,89 @@
+.signUpPageContainer {
+    display: flex;
+    width: 100%;
+}
+
+.signUpFormContainer {  
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    background-color: #FFFFFF;;
+
+}
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 0 auto;
+    font-size: 14px;
+
+}
+
+.signUpFormTitle {
+    font-style: normal;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+.signUpFormLabel{
+    margin-top: 2em;
+}
+
+.signUpFormInputText {
+    border: none;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 2rem;
+    width: 18rem;
+    font-size: 14px;
+    line-height: 24px;
+    background: #F6F6F6;
+}
+.signUpFormInputText:hover {
+    background: #D1D1D1;
+}
+.signUpFormInputText:focus {
+    background: #F6F6F6;
+}
+.signUpFormInputTextError {
+    border: 1px solid #FF768E;
+}
+
+.signUpFormCheckbox {
+    display: flex;
+    margin-top: 1em;
+}
+.signUpFormSubmitButton {
+    margin-top: 1em;
+    height: 2rem;
+    width: 18rem;
+    background: #E4163A;
+    border-radius: 4px;
+    color: white;
+    border-style: none;
+}
+.signUpFormSubmitButton:hover {
+    background: #FF5761;
+}
+.signUpFormSubmitButton:active {
+    background: #C60E2E;
+}
+.signUpFormSubmitButton[disabled] {
+    background: #F6F6F6;
+}
+
+.alreadyMemberParagraph {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.imageContainer {
+    width: 50%;
+    background-color: blue;
+}

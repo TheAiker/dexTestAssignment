@@ -1,14 +1,20 @@
 import React from "react"
-import './hamburger-bar.css'
+import  HamburgerMenuCSS from './hamburger-bar.module.css'
+import { Link } from "react-router-dom";
+
 
 export function HamburgerMenu(): JSX.Element {
     return (
-        <div className="hamburgerMenuContainer">
-            <div className="topMenuButtons" >
-                <div>Teams</div>
-                <div>Players</div>
+        <div className={HamburgerMenuCSS.hamburgerMenuContainer}>
+            <div className={HamburgerMenuCSS.topMenuButtons} >
+                <div> 
+                    <Link to='/teams'>Teams</Link>
+                </div>
+                <div> 
+                    <Link to='/players'>Players</Link>
+                </div>
             </div>
-            <div className="signOutButton">
+            <div className={HamburgerMenuCSS.signOutButton}>
                 <div>Sign out</div>
             </div>
         </div>
