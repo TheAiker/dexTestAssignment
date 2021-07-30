@@ -1,7 +1,8 @@
 import React from "react";
 import { Link, useLocation } from 'react-router-dom'
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import NavBarCSS from './nav-bar.module.css'
+import profilePic from '../../../assets/icon/profile_rounded.svg'
+import logoPic from '../../../assets/icon/logo.svg'
 
 export function TopNavBar(): JSX.Element {
     const location = useLocation();
@@ -10,11 +11,11 @@ export function TopNavBar(): JSX.Element {
     }
     return(
         <div className={NavBarCSS.navBarContainer}>
-            <div>
-                <img className={NavBarCSS.logoImage} src="/logo.svg" alt="logo" />  
+            <div className={NavBarCSS.LogoImageContainer}>
+                <img className={NavBarCSS.logoImagePic} src={logoPic} alt="logo" />  
             </div>
-            <div className={NavBarCSS.accountIcon}>
-                <Link to="/signIn"><AccountCircleIcon/></Link>
+            <div className={NavBarCSS.accountIconContainer}>
+                <Link to='/signIn'><img className={NavBarCSS.accountIconPic}src={profilePic} alt="" /></Link>
             </div>
         </div>
     )

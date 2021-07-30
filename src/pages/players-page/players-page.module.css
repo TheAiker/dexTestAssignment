@@ -4,8 +4,9 @@
     background-color: red;
     margin: 5vh 5vw 5vh 5vw;
     flex-wrap: wrap;
+
 }
 
 .playerCardContainer {
-    margin: 7em;
+    margin: 8em;
 }
