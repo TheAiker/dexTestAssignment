@@ -5,7 +5,7 @@ import NavBarCSS from './nav-bar.module.css'
 
 export function TopNavBar(): JSX.Element {
     const location = useLocation();
-    if (location.pathname === '/signUp') {
+    if (location.pathname === '/signUp' || location.pathname ==='/signIn') {
         return <></>;
     }
     return(
@@ -14,7 +14,7 @@ export function TopNavBar(): JSX.Element {
                 <img className={NavBarCSS.logoImage} src="/logo.svg" alt="logo" />  
             </div>
             <div className={NavBarCSS.accountIcon}>
-                <Link to="/signUp"><AccountCircleIcon/></Link>
+                <Link to="/signIn"><AccountCircleIcon/></Link>
             </div>
         </div>
     )

@@ -1,11 +1,11 @@
-.signUpPageContainer {
+.signInPageContainer {
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: center;
 }
 
-.signUpFormContainer {  
+.signInFormContainer {  
     display: flex; 
     flex: 2;
     justify-content: center;
@@ -14,7 +14,7 @@
     background-color: #FFFFFF;;
 
 }
-.signUpForm {
+.signInForm {
     display: flex;
     flex-direction: column;
     max-width: 50%;
@@ -23,17 +23,17 @@
 
 }
 
-.signUpFormTitle {
+.signInFormTitle {
     font-style: normal;
     font-size: 36px;
     line-height: 49px;
 }
 
-.signUpFormLabel{
+.signInFormLabel{
     margin-top: 2em;
 }
 
-.signUpFormInputText {
+.signInFormInputText {
     border: none;
     box-sizing: border-box;
     border-radius: 4px;
@@ -44,21 +44,21 @@
     line-height: 24px;
     background: #F6F6F6;
 }
-.signUpFormInputText:hover {
+.signInFormInputText:hover {
     background: #D1D1D1;
 }
-.signUpFormInputText:focus {
+.signInFormInputText:focus {
     background: #F6F6F6;
 }
-.signUpFormInputTextError {
+.signInFormInputTextError {
     border: 1px solid #FF768E;
 }
 
-.signUpFormCheckbox {
+.signInFormCheckbox {
     display: flex;
     margin-top: 1em;
 }
-.signUpFormSubmitButton {
+.signInFormSubmitButton {
     margin-top: 1em;
     height: 2rem;
     width: 18rem;
@@ -67,13 +67,13 @@
     color: white;
     border-style: none;
 }
-.signUpFormSubmitButton:hover {
+.signInFormSubmitButton:hover {
     background: #FF5761;
 }
-.signUpFormSubmitButton:active {
+.signInFormSubmitButton:active {
     background: #C60E2E;
 }
-.signUpFormSubmitButton[disabled] {
+.signInFormSubmitButton[disabled] {
     background: #F6F6F6;
 }
 
@@ -94,7 +94,3 @@
     align-items: center;
     justify-content: center;
 }
-/* 
-.signUpImage {
-    
-} */

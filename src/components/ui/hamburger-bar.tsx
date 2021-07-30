@@ -5,7 +5,7 @@ import { Link, useLocation} from "react-router-dom";
 
 export function HamburgerMenu(): JSX.Element {
     const location = useLocation();
-    if (location.pathname === '/signUp') {
+    if (location.pathname === '/signUp' || location.pathname ==='/signIn') {
         return <></>;
     }
     return (
