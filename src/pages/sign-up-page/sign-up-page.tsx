@@ -38,7 +38,7 @@ export function SignUp(): JSX.Element {
             </div>
             <div className={SignUpCSS.imageContainer}>
                 <span>
-                    <img src={signUpImage} alt="" />
+                    <img className={SignUpCSS.signUpImage} src={signUpImage} alt="" />
                 </span>
             </div>
         </div>

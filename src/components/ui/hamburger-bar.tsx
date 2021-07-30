@@ -1,9 +1,13 @@
 import React from "react"
 import  HamburgerMenuCSS from './hamburger-bar.module.css'
-import { Link } from "react-router-dom";
+import { Link, useLocation} from "react-router-dom";
 
 
 export function HamburgerMenu(): JSX.Element {
+    const location = useLocation();
+    if (location.pathname === '/signUp') {
+        return <></>;
+    }
     return (
         <div className={HamburgerMenuCSS.hamburgerMenuContainer}>
             <div className={HamburgerMenuCSS.topMenuButtons} >

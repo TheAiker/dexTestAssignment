@@ -1,10 +1,13 @@
 .signUpPageContainer {
     display: flex;
     width: 100%;
+    height: 100%;
+    justify-content: center;
 }
 
 .signUpFormContainer {  
     display: flex; 
+    flex: 2;
     justify-content: center;
     flex-direction: column;
     width: 30%;
@@ -85,5 +88,12 @@
 
 .imageContainer {
     width: 50%;
-    background-color: blue;
+    background-color: #F5FBFF;
+    display: flex;
+    flex: 4;
+    align-items: center;
+    justify-content: center;
+}
+.signUpImage {
+    
 }

@@ -1,9 +1,13 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import NavBarCSS from './nav-bar.module.css'
 
 export function TopNavBar(): JSX.Element {
+    const location = useLocation();
+    if (location.pathname === '/signUp') {
+        return <></>;
+    }
     return(
         <div className={NavBarCSS.navBarContainer}>
             <div>
