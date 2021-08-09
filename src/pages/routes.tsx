@@ -7,6 +7,7 @@ import { TopNavBar } from '../components/ui/menus/nav-bar';
 import { PlayersPage } from './players-page/players-page';
 import { TeamsPage } from './teams-page/teams-page';
 import { SignIn } from './sign-in-page/sign-in-page';
+import { SignUp } from './sign-up-page/sign-up-page';
 
 export function PageRoutes(): JSX.Element { 
     return (
@@ -25,9 +26,9 @@ export function PageRoutes(): JSX.Element {
             <Route path="/signIn" component={SignIn}>
                 <SignIn/>
             </Route>
-        {/* <Route path="/signUp" component={SignUp}>
+            <Route path="/signUp" component={SignUp}>
                 <SignUp/>
-            </Route> */}
+            </Route>
             <Route path="/teams" component={TeamsPage}>
                 <TeamsPage/>
             </Route>
