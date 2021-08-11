@@ -3,7 +3,10 @@ import signInImage from '../../assets/images/signInImage.svg';
 import cx from 'classnames';
 import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
+import { useDispatch } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { actionCreators } from '../../core/redux/actions';
 
     type SignInFormData = {
         login: string;
@@ -12,7 +15,15 @@ import { Link } from 'react-router-dom'
 
 export function SignIn(): JSX.Element {
     const { register, handleSubmit, formState: { errors } } = useForm<SignInFormData>();
-    const onSubmit: SubmitHandler<SignInFormData> = data => console.log(data);
+    const dispatch = useDispatch();
+    const { signIn } = bindActionCreators(actionCreators, dispatch);
+    
+    const history = useHistory()
+
+    const onSubmit: SubmitHandler<SignInFormData> = (data: SignInFormData) => {
+        signIn(data);
+        history.push('/teams');
+    };
     
 
     return(

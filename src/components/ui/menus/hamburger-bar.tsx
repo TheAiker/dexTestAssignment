@@ -1,7 +1,7 @@
 import React from "react"
 import  HamburgerMenuCSS from './hamburger-bar.module.css'
-import { Link, useLocation} from "react-router-dom";
-
+import { Link, useLocation} from 'react-router-dom';
+import { SignOutButton } from '../button/signOutButton';
 
 export function HamburgerMenu(): JSX.Element {
     const location = useLocation();
@@ -19,7 +19,7 @@ export function HamburgerMenu(): JSX.Element {
                 </div>
             </div>
             <div className={HamburgerMenuCSS.signOutButton}>
-                <div>Sign out</div>
+                <div><SignOutButton/></div>
             </div>
         </div>
     );

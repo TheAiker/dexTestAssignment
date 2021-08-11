@@ -3,7 +3,11 @@ import signUpImage from '../../assets/images/signUpImage.svg';
 import cx from 'classnames';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { AuthState } from '../../core/redux/types'; 
+import { bindActionCreators } from 'redux';
+import { actionCreators } from '../../core/redux/actions';
 
 type SignUpFormData = {
     userName: string;
@@ -14,7 +18,18 @@ type SignUpFormData = {
 
 export function SignUp(): JSX.Element {
     const { register, handleSubmit, formState: { errors }, watch } = useForm<SignUpFormData>();
-    const onSubmit: SubmitHandler<SignUpFormData> = data => console.log(data);
+    const dispatch = useDispatch();
+    const { signUp } = bindActionCreators(actionCreators, dispatch);
+    const sessionToken = useSelector((state: AuthState) => state.sessionToken)
+    
+    console.log('sesh', sessionToken);
+
+    const history = useHistory()
+
+    const onSubmit: SubmitHandler<SignUpFormData> = async (data: SignUpFormData) => {
+        signUp(data);
+        history.push('/teams')
+    };
     const password = useRef({});
     password.current = watch("password", "");
     
