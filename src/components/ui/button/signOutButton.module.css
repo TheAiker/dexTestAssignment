@@ -1,0 +1,25 @@
+.signOutButtonContainer {
+
+}
+
+.signOutButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FF768E;
+    border-style: none;
+    background-color: transparent;
+}
+.signOutButton:hover {
+    cursor: pointer;
+}
+
+.signOutButtonIcon {
+    width: 24px;
+    height:  24px;
+    margin-bottom: 7px;
+}
+
+.signOutButtonText {
+    font-size: 12px;
+}

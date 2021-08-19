@@ -27,6 +27,7 @@
     font-style: normal;
     font-size: 36px;
     line-height: 49px;
+    color: #344472;
 }
 
 .signInFormLabel{
@@ -38,30 +39,35 @@
     box-sizing: border-box;
     border-radius: 4px;
     cursor: pointer;
-    height: 2rem;
-    width: 18rem;
+    height: 40px;
+    width: 366px;
     font-size: 14px;
     line-height: 24px;
     background: #F6F6F6;
+    padding: 8px 12px;
+    outline-style: none;
+    
 }
 .signInFormInputText:hover {
     background: #D1D1D1;
 }
 .signInFormInputText:focus {
     background: #F6F6F6;
+    box-shadow: 0px 0px 5px #D9D9D9;
 }
 .signInFormInputTextError {
     border: 1px solid #FF768E;
 }
 
 .signInFormSubmitButton {
-    margin-top: 1em;
-    height: 2rem;
-    width: 18rem;
+    margin: 24px 0px;
+    height: 40px;
+    width: 366px;
     background: #E4163A;
     border-radius: 4px;
     color: white;
     border-style: none;
+    padding: 8px 12px;
 }
 .signInFormSubmitButton:hover {
     background: #FF5761;
@@ -80,6 +86,7 @@
     align-items: center;
     margin: 0 auto;
     justify-content: center;
+    color: #707070;
 }
 
 .imageContainer {

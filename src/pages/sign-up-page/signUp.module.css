@@ -1,0 +1,98 @@
+.signUpPageContainer {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+
+.signUpFormContainer {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+  background-color: #ffffff;
+}
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.signUpFormTitle {
+  font-style: normal;
+  font-size: 36px;
+  line-height: 49px;
+}
+
+.signUpFormLabel {
+  margin-top: 2em;
+}
+
+.signUpFormInputText {
+  border: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 2rem;
+  width: 18rem;
+  font-size: 14px;
+  line-height: 24px;
+  background: #f6f6f6;
+}
+.signUpFormInputText:hover {
+  background: #d1d1d1;
+}
+.signUpFormInputText:focus {
+  background: #f6f6f6;
+}
+.signUpFormInputTextError {
+  border: 1px solid #ff768e;
+}
+
+.signUpFormCheckbox {
+  display: flex;
+  margin-top: 1em;
+}
+.signUpFormSubmitButton {
+  margin-top: 1em;
+  height: 2rem;
+  width: 18rem;
+  background: #e4163a;
+  border-radius: 4px;
+  color: white;
+  border-style: none;
+}
+.signUpFormSubmitButton:hover {
+  background: #ff5761;
+}
+.signUpFormSubmitButton:active {
+  background: #c60e2e;
+}
+.signUpFormSubmitButton[disabled] {
+  background: #f6f6f6;
+}
+
+.alreadyMemberParagraph {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.imageContainer {
+  width: 70%;
+  background-color: #f5fbff;
+  display: flex;
+  flex: 4;
+  align-items: center;
+  justify-content: center;
+}
+/* 
+.signUpImage {
+    
+} */

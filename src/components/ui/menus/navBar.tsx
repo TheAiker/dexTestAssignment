@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from 'react-router-dom'
-import NavBarCSS from './nav-bar.module.css'
+import NavBarCSS from './navBar.module.css'
 import profilePic from '../../../assets/icon/profile_rounded.svg'
 import logoPic from '../../../assets/icon/logo.svg'
 

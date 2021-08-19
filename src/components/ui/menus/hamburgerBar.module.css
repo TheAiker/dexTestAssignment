@@ -3,7 +3,7 @@
     flex-direction: column;
     background-color:#FFFFFF;
     box-shadow: 0px 1px 10px 0px #D1D1D180;
-    width: 25vh;
+    width: 10vw;
     height: 100%;
     flex: 1;
 
@@ -11,19 +11,30 @@
 .topMenuButtons {
     display: flex;
     flex-direction: column;
-    background-color: red;
+    background-color: green;
     align-items: center;
-    margin-right: 2vh;
-    margin-left: 2vh;
+    margin-right: 2vw;
+    margin-left: 2vw;
     
 }
+/* .topMenuButtonTeams {
+}
+.topMenuButtonPlayers {
+} */
+.topMenuButtonIcon {
+    color: #9C9C9C
+}
+.topMenuButtonIconActive {
+    color: #E4163A
+}
+
 .signOutButton {
     display: flex;
     flex-direction: column;
-    background-color: red;
+    background-color: green;
     align-items: center;
-    margin-right: 2vh;
-    margin-left: 2vh;
+    margin-right: 2vw;
+    margin-left: 2vw;
     margin-bottom: 2vh;
     margin-top: 100%;
     
