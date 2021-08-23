@@ -17,10 +17,16 @@
     margin-left: 2vw;
     
 }
-/* .topMenuButtonTeams {
+.topMenuButtonTeams {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .topMenuButtonPlayers {
-} */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .topMenuButtonIcon {
     color: #9C9C9C
 }

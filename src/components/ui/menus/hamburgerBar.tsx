@@ -96,7 +96,7 @@ export function HamburgerMenu(): JSX.Element {
       </div>
       <div className={HamburgerMenuCSS.signOutButton}>
         <div>
-          <SignOutButton />
+          <SignOutButton title="Sign out"/>
         </div>
       </div>
     </div>

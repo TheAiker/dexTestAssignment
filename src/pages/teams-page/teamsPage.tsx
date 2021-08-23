@@ -1,9 +1,17 @@
 import React from "react";
+import TeamsCSS from './teamsPage.module.css'
 
 export function TeamsPage(): JSX.Element {
     return (
         <div>
-            this is a teams page
+            <div>
+                <div className={TeamsCSS.searchBarContainer}>
+
+                </div>
+                <div className={TeamsCSS.addButtonContainer}>
+
+                </div>
+            </div>
         </div>
     );
 }
